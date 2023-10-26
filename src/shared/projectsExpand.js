@@ -3,7 +3,7 @@ export const PROJECTSEXPAND = [
     name: "Clock App",
     thumbnail: "/portfolio-thumbnails/clock-app.jpg",
     stacks: ["HTML", "SASS", "React", "API"],
-    webLink: "https://main--comfy-valkyrie-14b8c6.netlify.app/",
+    webLink: "https://clock-app-cassie.netlify.app/",
     codeLink: "https://github.com/cassiecccc/clock-app-client",
   },
   {
@@ -17,7 +17,7 @@ export const PROJECTSEXPAND = [
       "Emailjs",
       "React-Hook-Form",
     ],
-    webLink: "https://main--comfy-valkyrie-14b8c6.netlify.app/",
-    codeLink: "https://github.com/cassiecccc/clock-app-client",
+    webLink: "https://cassiecc.com/",
+    codeLink: "https://github.com/cassiecccc/yicheng-portfolio-site",
   },
 ];

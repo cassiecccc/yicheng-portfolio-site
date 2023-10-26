@@ -3,7 +3,7 @@ export const PROJECTSSHOWN = [
     name: "Coffeeroasters Subscription Site",
     thumbnail: "/portfolio-thumbnails/coffee-roasters.jpg",
     stacks: ["HTML", "SASS", "React", "React-Router"],
-    webLink: "https://main--earnest-melba-0803aa.netlify.app/",
+    webLink: "https://coffeeroasters-subscription-cassie.netlify.app/",
     codeLink: "https://github.com/cassiecccc/coffee-roasters-subscription-site",
   },
 
@@ -18,7 +18,7 @@ export const PROJECTSSHOWN = [
       "React-Responsive",
       "Session_Storage",
     ],
-    webLink: "https://master--classy-moxie-1f375a.netlify.app/",
+    webLink: "https://github-user-search-app-one.netlify.app/",
     codeLink: "https://github.com/cassiecccc/github-user-search-app",
   },
 
@@ -26,7 +26,7 @@ export const PROJECTSSHOWN = [
     name: "Multistep Form",
     thumbnail: "/portfolio-thumbnails/multistep-form.jpg",
     stacks: ["HTML", "SASS", "React", "React-Hook-Form", "React-Router"],
-    webLink: "https://main--scintillating-churros-258220.netlify.app/",
+    webLink: "https://multistep-form-cassie.netlify.app",
     codeLink: "https://github.com/cassiecccc/multi-step-form",
   },
 
@@ -34,7 +34,7 @@ export const PROJECTSSHOWN = [
     name: "Todo App",
     thumbnail: "/portfolio-thumbnails/todo-app.jpg",
     stacks: ["HTML", "SASS", "React", "Local_Storage"],
-    webLink: "https://main--incandescent-basbousa-1f82f8.netlify.app/",
+    webLink: "https://todo-list-app-cassie.netlify.app/",
     codeLink: "https://github.com/cassiecccc/todo-app",
   },
 
@@ -42,7 +42,7 @@ export const PROJECTSSHOWN = [
     name: "E-commerce Product Page",
     thumbnail: "/portfolio-thumbnails/ecommerce-site.jpg",
     stacks: ["HTML", "SASS", "React", "React-Responsive-Carousel"],
-    webLink: "https://main--magical-lokum-dde936.netlify.app/",
+    webLink: "https://ecommerce-product-site-cassie.netlify.app/",
     codeLink: "https://github.com/cassiecccc/ecommerce-product-page",
   },
 
@@ -50,7 +50,7 @@ export const PROJECTSSHOWN = [
     name: "Connect Four Game",
     thumbnail: "/portfolio-thumbnails/connect-four.jpg",
     stacks: ["HTML", "SASS", "JavsScript"],
-    webLink: "https://main--euphonious-croquembouche-1ac6f5.netlify.app/",
+    webLink: "https://connect-four-game-cassie.netlify.app/",
     codeLink: "https://github.com/cassiecccc/connect-four-game",
   },
 ];
