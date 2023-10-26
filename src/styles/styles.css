@@ -1,0 +1,888 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (min-width: 320px) {
+  .body-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .nav-hero-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  svg:hover path {
+    fill: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  nav .logo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  nav .logo:hover {
+    color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  nav .social-menu {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9rem;
+  }
+  nav .social-menu li {
+    list-style: none;
+  }
+  nav .social-menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .social-menu li a img {
+    width: 70%;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-image {
+    margin-top: 2.5rem;
+  }
+  .hero-content {
+    padding: 1rem 1rem 0 1rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content .hero-content-statement {
+    font-size: calc(2.25rem + 1vw);
+    letter-spacing: -1.136px;
+    font-weight: 700;
+    line-height: calc(2.25rem + 3vw);
+  }
+  .hero-content .hero-content-statement .profile-name {
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.5rem;
+  }
+  .hero-content .hero-content-bio {
+    margin-top: 1.5rem;
+    font-size: calc(0.95rem + 0.2vw);
+    font-weight: 400;
+    line-height: 1.625rem;
+    color: hsl(0, 0%, 85%);
+  }
+  .hero-content .contact-me {
+    margin-top: 1.5rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+  }
+  .hero-content .contact-me:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .stacks {
+    margin-top: 3.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stacks .stacks-hr {
+    width: 100%;
+  }
+  .stacks .stack-card-wrapper {
+    margin-top: 1rem;
+  }
+  .stacks .stack-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  .stacks .stack-card .stack-card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -1px;
+  }
+  .stacks .stack-card .stack-card-details {
+    color: hsl(0, 0%, 85%);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .stacks .expand-button {
+    margin-top: 2rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+  }
+  .stacks .expand-button:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .projects {
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 0 1rem;
+  }
+  .projects .projects-header {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .projects .projects-header .projects-header-title {
+    font-size: calc(2rem + 1vw);
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -1.136px;
+  }
+  .projects .projects-header .contact-me {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+  }
+  .projects .projects-header .contact-me:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .projects .project-card .project-thumbnail {
+    width: 100%;
+    height: 100%;
+  }
+  .projects .project-card .project-name {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+  }
+  .projects .project-card .project-stacks {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .projects .project-card .project-stacks .project-stack-item {
+    font-size: 1rem;
+    color: hsl(0, 0%, 85%);
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-right: 1.125rem;
+  }
+  .projects .project-card .project-link {
+    width: 100%;
+    margin-top: 1.375rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .projects .project-card .project-link .project-link-item {
+    margin-right: 2rem;
+  }
+  .projects .project-card .project-link .project-link-item a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+    line-height: 2.5rem;
+  }
+  .projects .project-card .project-link .project-link-item a:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .projects .expand-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .projects .expand-button-wrapper .expand-button {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-decoration-color: hsl(0, 0%, 100%);
+  }
+  .projects .expand-button-wrapper .expand-button:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .project-card {
+    margin-top: 2rem;
+  }
+  .contact-footer-wrapper {
+    background-color: hsl(0, 0%, 14%);
+  }
+  .contact {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding-top: 3.75rem;
+    background-color: hsl(0, 0%, 14%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .contact-title {
+    font-size: calc(2.5rem + 1vw);
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .contact .contact-descriptions {
+    padding: 0 1rem;
+    margin-top: 1.25rem;
+    text-align: center;
+    color: hsl(0, 0%, 85%);
+    font-size: calc(0.95rem + 0.2vw);
+    font-weight: 500;
+    line-height: 1.625rem;
+  }
+  .contact-form-wrapper {
+    width: 100%;
+  }
+  .contact-form {
+    padding: 0 1rem;
+    margin-top: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    width: 100%;
+    height: 2.7rem;
+    margin-top: 2rem;
+    caret-color: hsl(0, 0%, 100%);
+    padding-left: 1.5rem;
+    font-family: "Space Grotesk", sans-serif;
+    color: hsl(0, 0%, 100%);
+  }
+  .contact-form input::-moz-placeholder {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: -0.222px;
+    opacity: 0.5;
+  }
+  .contact-form input::placeholder {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: -0.222px;
+    opacity: 0.5;
+  }
+  .contact-form input:focus {
+    outline: none;
+    border-bottom: 1px solid hsl(153, 71%, 59%);
+  }
+  .contact-form textarea {
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    width: 100%;
+    padding-left: 1.5rem;
+    resize: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .contact-form textarea::-moz-placeholder {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: -0.222px;
+    opacity: 0.5;
+  }
+  .contact-form textarea::placeholder {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: -0.222px;
+    opacity: 0.5;
+  }
+  .contact-form textarea:focus {
+    outline: none;
+    border-bottom: 1px solid hsl(153, 71%, 59%);
+  }
+  .contact-form .submit-button-wrapper {
+    display: flex;
+    align-self: flex-end;
+  }
+  .contact-form .submit-button {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+    padding-left: 0;
+  }
+  .contact-form .submit-button:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .error-message {
+    color: #ff6f5b;
+    font-size: 0.75rem;
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+  footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+    width: 100%;
+    padding: 2.5rem 1rem 3.75rem 1rem;
+    text-align: center;
+  }
+  footer .footer-hr {
+    width: 100%;
+  }
+  footer .logo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    cursor: pointer;
+  }
+  footer .logo:hover {
+    color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  footer .social-menu {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    width: 9rem;
+  }
+  footer .social-menu li {
+    list-style: none;
+  }
+  footer .social-menu li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .social-menu li a img {
+    width: 70%;
+  }
+  .hidden {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav-hero-mobile {
+    padding: 2rem 2rem 0 2rem;
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav .logo {
+    font-size: calc(2rem + 0.1vw);
+  }
+  nav .social-menu {
+    margin-top: 0;
+  }
+  .hero {
+    display: grid;
+    grid-template-areas: "b b a a";
+    margin-top: 3.5rem;
+  }
+  .hero .hero-image {
+    margin-top: 0;
+    width: 100%;
+    grid-area: a;
+  }
+  .hero-content {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero-content .hero-content-statement {
+    font-size: 4.5rem;
+    letter-spacing: -2.045px;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-align: left;
+    width: 120%;
+  }
+  .hero-content .hero-content-statement .profile-name {
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.5rem;
+  }
+  .hero-content .hero-content-bio {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 3.75rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 85%);
+  }
+  .hero-content .contact-me {
+    margin-top: 2.125rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+  }
+  .hero-content .contact-me:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .stacks {
+    margin-top: 3.75rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .stacks .stack-card-wrapper,
+  .stacks .expand-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+    width: 100%;
+    -moz-column-gap: 7.5rem;
+         column-gap: 7.5rem;
+  }
+  .stacks .stack-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3.25rem;
+  }
+  .stacks .stack-card .stack-card-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    line-height: 3.5rem;
+    letter-spacing: -1.5px;
+  }
+  .stacks .stack-card .stack-card-details {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: hsl(0, 0%, 85%);
+    font-weight: 500;
+    margin-top: 0.875rem;
+  }
+  .stacks .expand-button {
+    margin-top: 3.25rem;
+  }
+  .projects {
+    margin-top: 6.25rem;
+    padding: 0 2rem;
+  }
+  .projects .projects-header {
+    margin-top: 5rem;
+  }
+  .projects .projects-header .projects-header-title {
+    font-size: calc(4.5rem + 0.2vw);
+    letter-spacing: -2.045px;
+    font-weight: 700;
+    line-height: calc(4.5rem + 0.2vw);
+  }
+  .projects .projects-shown,
+  .projects .projects-expand {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    align-items: center;
+  }
+  .projects .project-card .project-name {
+    height: 4rem;
+  }
+  .projects .project-card .project-stacks {
+    height: 3rem;
+  }
+  .projects .project-card .project-link {
+    margin-top: 1.25rem;
+    width: 100%;
+    display: block;
+  }
+  .projects .project-card .project-link .project-link-item {
+    margin-right: 2rem;
+  }
+  .projects .project-card .project-link .project-link-item a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+    line-height: 2.5rem;
+  }
+  .projects .project-card .project-link .project-link-item a:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .projects .expand-button-wrapper {
+    margin-top: 3.25rem;
+  }
+  .project-card {
+    margin-top: 3.75rem;
+  }
+  .contact {
+    margin-top: 6.25rem;
+    padding-top: 3.75rem;
+    background-color: hsl(0, 0%, 14%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem 10rem 0 10rem;
+  }
+  .contact .contact-title {
+    font-size: calc(4.5rem + 0.2vw);
+    line-height: calc(4.5rem + 0.2vw);
+    letter-spacing: -2.045px;
+    font-weight: 700;
+  }
+  .contact .contact-descriptions {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .contact-form {
+    margin-top: 3rem;
+  }
+  footer {
+    margin-top: 3.75rem;
+    padding: 2rem;
+  }
+  footer .footer-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer .logo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: calc(2rem + 0.1vw);
+    margin-top: 0;
+  }
+  footer .social-menu {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .nav-hero-mobile {
+    padding: 2.43rem 10rem 0 10rem;
+  }
+  .hero {
+    display: grid;
+    grid-template-areas: "b a a";
+  }
+  .hero .hero-image {
+    max-width: 450px;
+  }
+  .hero-content .hero-content-statement {
+    font-size: 5rem;
+    letter-spacing: -2.5px;
+    line-height: 5rem;
+    margin-top: -4rem;
+  }
+  .hero-content .hero-content-bio {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 2.69rem;
+    font-size: calc(1.125rem + 0.2vw);
+    line-height: calc(1.75rem + 0.2vw);
+    font-weight: 500;
+    color: hsl(0, 0%, 85%);
+  }
+  .hero-content .contact-me {
+    margin-top: 4.125rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+  }
+  .hero-content .contact-me:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .stacks {
+    margin-top: 5rem;
+    padding: 0 10rem;
+    align-items: center;
+  }
+  .stacks .stack-card-wrapper,
+  .stacks .expand-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+  .stacks .stack-card {
+    margin-top: 4.5rem;
+  }
+  .stacks .stack-card .stack-card-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -1.5px;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  .stacks .expand-button {
+    margin-top: 4.5rem;
+  }
+  .projects {
+    padding: 0 10rem;
+  }
+  .projects .projects-header .projects-header-title {
+    font-size: 5rem;
+    letter-spacing: -2.5px;
+    line-height: 5rem;
+  }
+  .projects .projects-shown,
+  .projects .projects-expand {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .projects .project-card {
+    position: relative;
+    margin-bottom: 4.3rem;
+  }
+  .projects .project-card .project-name-stack-wrapper {
+    position: absolute;
+  }
+  .projects .project-card .project-name {
+    height: 1rem;
+  }
+  .projects .project-card .project-stacks {
+    height: 2rem;
+    margin-top: 1.5rem;
+  }
+  .projects .project-card .project-desktop {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.75);
+  }
+  .projects .project-card .project-desktop .project-link-item a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.286px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(153, 71%, 59%);
+    text-underline-offset: 0.75rem;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+    line-height: 2.5rem;
+  }
+  .projects .project-card .project-desktop .project-link-item a:hover {
+    color: hsl(153, 71%, 59%);
+    text-decoration-color: hsl(153, 71%, 59%);
+    transition: 0.2s ease;
+  }
+  .projects .project-card .project-desktop .code-link {
+    margin-top: 3rem;
+  }
+  .projects .expand-button-wrapper {
+    margin-top: 4.5rem;
+  }
+  .project-card {
+    margin-bottom: 4.3rem;
+  }
+  .contact {
+    margin-top: 8.5rem;
+    background-color: hsl(0, 0%, 14%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: top;
+    justify-content: top;
+    align-content: top;
+    justify-content: top;
+    gap: 12rem;
+    padding: 1rem 10rem;
+  }
+  .contact .contact-title {
+    text-align: left;
+    font-size: 5rem;
+    letter-spacing: -2.5px;
+    line-height: 5rem;
+  }
+  .contact .contact-descriptions {
+    margin-top: 2.25rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: left;
+  }
+  .contact-form {
+    margin-top: 3rem;
+  }
+  footer {
+    margin-top: 4.75rem;
+    padding: 0 10rem 5.75rem 10rem;
+  }
+  footer .footer-wrapper {
+    margin-top: 3rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
