@@ -22,7 +22,7 @@ export function Hero({ isMobile, isTablet, isDesktop }) {
       ) : (
         <img
           className="hero-image"
-          src="/images/image-profile-desktop.jpg"
+          src="/images/image-profile-mobile.jpg"
           alt="profile image"
         />
       )}
