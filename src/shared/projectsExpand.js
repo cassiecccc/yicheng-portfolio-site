@@ -20,4 +20,11 @@ export const PROJECTSEXPAND = [
     webLink: "https://cassiecc.com/",
     codeLink: "https://github.com/cassiecccc/yicheng-portfolio-site",
   },
+  {
+    name: "Interactive Rating Component",
+    thumbnail: "/portfolio-thumbnails/interactive-rating-component.jpg",
+    stacks: ["HTML", "SASS", "React"],
+    webLink: "https://interactive-rating-component-cassie.netlify.app/",
+    codeLink: "https://github.com/cassiecccc/interactive-rating-component",
+  },
 ];
