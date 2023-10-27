@@ -1,9 +1,9 @@
 import { PROJECTSSHOWN } from "../shared/projectsShown";
 import { PROJECTSEXPAND } from "../shared/projectsExpand";
-import { useState, useRef } from "react";
+import { useState, useRef, useTransition } from "react";
 
 export function Projects({ isMobile, isDesktop }) {
-  const [currentHovered, setCurrentHovered] = useState();
+  const [currentHovered, setCurrentHovered] = useState(undefined);
   const [projectDataShown] = useState(PROJECTSSHOWN);
   const [projectDataExpand] = useState(PROJECTSEXPAND);
   const [isExpandShown, setIsExpandShown] = useState(false);
@@ -36,10 +36,12 @@ export function Projects({ isMobile, isDesktop }) {
             <div
               key={i}
               className="project-card"
-              onMouseLeave={() => setCurrentHovered(undefined)}
+              onMouseLeave={() =>
+                setTimeout(() => setCurrentHovered(undefined), 100)
+              }
             >
               <img
-                onMouseEnter={() => setCurrentHovered(i)}
+                onMouseEnter={() => setTimeout(() => setCurrentHovered(i), 100)}
                 className="project-thumbnail"
                 src={data.thumbnail}
                 alt="project thumbnail"
@@ -87,10 +89,12 @@ export function Projects({ isMobile, isDesktop }) {
             <div
               key={data.name}
               className="project-card"
-              onMouseLeave={() => setCurrentHovered(undefined)}
+              onMouseLeave={() =>
+                setTimeout(() => setCurrentHovered(undefined), 100)
+              }
             >
               <img
-                onMouseEnter={() => setCurrentHovered(i)}
+                onMouseEnter={() => setTimeout(() => setCurrentHovered(i), 100)}
                 className="project-thumbnail"
                 src={data.thumbnail}
                 alt="project thumbnail"
