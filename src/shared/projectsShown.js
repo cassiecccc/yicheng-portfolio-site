@@ -1,5 +1,13 @@
 export const PROJECTSSHOWN = [
   {
+    name: "YelpCamp Full-Stack Site",
+    thumbnail: "/portfolio-thumbnails/yelpcamp.png",
+    stacks: ["Node", "Express", "MongoDB", "ejs"],
+    webLink: "https://radiant-beyond-95357-d5b30faaa07f.herokuapp.com/",
+    codeLink: "https://github.com/cassiecccc/yelpcamp",
+  },
+
+  {
     name: "Coffeeroasters Subscription Site",
     thumbnail: "/portfolio-thumbnails/coffee-roasters.jpg",
     stacks: ["HTML", "SASS", "React", "React-Router"],
