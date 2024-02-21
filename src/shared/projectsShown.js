@@ -53,12 +53,4 @@ export const PROJECTSSHOWN = [
     webLink: "https://ecommerce-product-site-cassie.netlify.app/",
     codeLink: "https://github.com/cassiecccc/ecommerce-product-page",
   },
-
-  {
-    name: "Connect Four Game",
-    thumbnail: "/portfolio-thumbnails/connect-four.jpg",
-    stacks: ["HTML", "SASS", "JavsScript"],
-    webLink: "https://connect-four-game-cassie.netlify.app/",
-    codeLink: "https://github.com/cassiecccc/connect-four-game",
-  },
 ];
