@@ -1,5 +1,12 @@
 export const PROJECTSEXPAND = [
   {
+    name: "Connect Four Game",
+    thumbnail: "/portfolio-thumbnails/connect-four.jpg",
+    stacks: ["HTML", "SASS", "JavsScript"],
+    webLink: "https://connect-four-game-cassie.netlify.app/",
+    codeLink: "https://github.com/cassiecccc/connect-four-game",
+  },
+  {
     name: "Clock App",
     thumbnail: "/portfolio-thumbnails/clock-app.jpg",
     stacks: ["HTML", "SASS", "React", "API"],
