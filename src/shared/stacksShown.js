@@ -1,26 +1,26 @@
 export const STACKSSHOWN = [
   {
-    name: "HTML",
-    years: "4 Years Experience",
-  },
-  {
-    name: "CSS",
-    years: "4 Years Experience",
-  },
-  {
-    name: "JavaScript",
-    years: "4 Years Experience",
-  },
-  {
     name: "React",
-    years: "4 Years Experience",
+    years: "2 Years Experience",
   },
   {
-    name: "Accessibility",
-    years: "4 Years Experience",
+    name: "MongoDB",
+    years: "2 Years Experience",
   },
   {
-    name: "SASS",
-    years: "4 Years Experience",
+    name: "Express",
+    years: "2 Years Experience",
+  },
+  {
+    name: "Node",
+    years: "2 Years Experience",
+  },
+  {
+    name: "NextJS",
+    years: "2 Years Experience",
+  },
+  {
+    name: "Redux",
+    years: "2 Years Experience",
   },
 ];

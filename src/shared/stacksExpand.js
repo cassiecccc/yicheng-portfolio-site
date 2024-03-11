@@ -1,26 +1,26 @@
 export const STACKSEXPAND = [
   {
-    name: "Mobile First",
-    years: "4 Years Experience",
-  },
-  {
-    name: "Git",
-    years: "4 Years Experience",
-  },
-  {
-    name: "Debugging",
-    years: "4 Years Experience",
-  },
-  {
-    name: "MongoDB",
+    name: "HTML",
     years: "2 Years Experience",
   },
   {
-    name: "Express",
+    name: "CSS",
     years: "2 Years Experience",
   },
   {
-    name: "Node",
+    name: "JavaScript",
+    years: "2 Years Experience",
+  },
+  {
+    name: "Tailwind",
+    years: "2 Years Experience",
+  },
+  {
+    name: "SQL",
+    years: "2 Years Experience",
+  },
+  {
+    name: "Testing",
     years: "2 Years Experience",
   },
 ];

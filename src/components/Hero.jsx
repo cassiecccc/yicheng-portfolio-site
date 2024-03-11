@@ -33,7 +33,7 @@ export function Hero({ isMobile, isTablet, isDesktop }) {
           <span className="profile-name"> Yicheng Du.</span>
         </h1>
         <p className="hero-content-bio">
-          Based in New York, I&apos;m a front-end developer passionate about
+          Based in New York, I&apos;m a Full Stack developer passionate about
           building accessible web apps that users love.
         </p>
         <button
